@@ -15,14 +15,14 @@ const Nav = () => {
             <div className="item">
                 <Link to={'/all'}>
                     <i className="fas fa-list item-text">
-                        <span className="text-name">ALL</span>
+                        <span className="text-name">LISTADO</span>
                     </i>
                 </Link>
             </div>
             <div className="item">
                 <Link to={'/new'}>
                     <i className="fas fa-plus-circle item-text">
-                        <span className="text-name">NEW</span>
+                        <span className="text-name">CREAR</span>
                     </i>
                 </Link>
             </div>
