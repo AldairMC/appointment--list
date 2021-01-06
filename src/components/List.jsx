@@ -1,5 +1,8 @@
 import React from 'react';
 
+//style
+import '../css/Error.scss'
+
 //compoents
 import Item from './Item'
 
@@ -16,7 +19,17 @@ const List = () => {
     }
         
     return (
-        <div>
+        (appointment.length == 0)?
+        <div className="container_error">
+            <div className="__text">
+                <i className="fas fa-exclamation"></i>
+            </div>
+            <br/>
+            <div className="__text">
+                <span>Listado de citas vacío</span>
+            </div>
+        </div>
+        : <div>
             {
                 Object.keys(appointment).map(key => (
                     <Item 

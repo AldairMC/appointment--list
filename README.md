@@ -28,3 +28,8 @@ Los campos del formulario deben estar validados y todos son requeridos.
 
 1. `npm install`
 2. `npm start` 
+
+
+## Deploy (Netlify)
+
+[Click aquí:](https://appointment-list.netlify.app)
