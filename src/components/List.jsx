@@ -19,7 +19,7 @@ const List = () => {
     }
         
     return (
-        (appointment.length == 0)?
+        (appointment.length === 0)?
         <div className="container_error">
             <div className="__text">
                 <i className="fas fa-exclamation"></i>
