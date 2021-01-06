@@ -1,0 +1,37 @@
+$color-hover: #E6E0DF;
+$color-home: #000000;
+
+
+.nav-container {
+    margin-bottom: 40px;
+}
+
+.home {
+    font-size: 50px;
+    text-align: center;
+    padding: 40px 0 40px 0;
+    
+    i {
+        color: $color-home;
+    }
+}
+
+.item {
+    text-align: start;
+    padding: 20px 15px 20px 60px;
+    
+    .item-text {
+        font-size: 20px;
+        color: $color-home;
+    }
+
+    .text-name {
+        margin-left: 15px;
+        font-family: "Ubuntu";
+    }
+
+    &:hover {
+        background-color: $color-hover;
+    }
+}
+
