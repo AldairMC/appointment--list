@@ -2,6 +2,3 @@
 
 # eslintcache
 *.eslintcache
-
-#yarn
-*yarn.lock
