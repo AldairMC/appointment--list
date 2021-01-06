@@ -1,1 +1,7 @@
 /node_modules
+
+# eslintcache
+*.eslintcache
+
+#yarn
+*yarn.lock
