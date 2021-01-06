@@ -12,6 +12,17 @@ import Info from './Info'
 import Error from './Error'
 
 const Router = () => {
+
+    const code_id = () => {
+        let x = Math.random()
+        return x.toFixed(5).toString()
+    }
+
+    const handleData = data => {
+        let appointment = JSON.stringify(data)
+        localStorage.setItem(`a${code_id()}`, appointment);
+    }
+
     return (
         <>
             <Contain>
@@ -24,13 +35,19 @@ const Router = () => {
                             <Route exact path="/" component={Info} />
                             <Route exact path="/all" render={() => {
                                     return (
-                                        <List />  
+                                        <List 
+                                            
+                                        />  
                                     )
                                 }}
                             />
                             <Route exact path="/new" render={() => {
                                     return (
-                                        <Form />  
+                                        <Form 
+                                            {...{
+                                                handleData
+                                            }}
+                                        />  
                                     )
                                 }}
                             />
