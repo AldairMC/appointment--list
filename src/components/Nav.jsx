@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import Logo from '../assest/deadline.png'
 import '../css/Nav.scss'
 
 const Nav = () => {
@@ -8,7 +9,7 @@ const Nav = () => {
         <nav className="nav-container">
             <div className="home">
                 <Link to={'/'}>
-                    <i className="fas fa-home"></i>
+                    <img src={Logo} alt="Logo" width="150" height="150"/>
                 </Link>
             </div>
             <div className="item">

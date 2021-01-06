@@ -8,7 +8,6 @@ import '../css/Router.scss'
 import Nav from './Nav'
 import Form from './Form'
 import List from './List'
-import Info from './Info'
 import Error from './Error'
 
 const Router = () => {
@@ -32,7 +31,7 @@ const Router = () => {
                     </div>
                     <div className="container-switch">
                         <Switch>
-                            <Route exact path="/" component={Info} />
+                            <Route exact path="/" component={List} />
                             <Route exact path="/all" render={() => {
                                     return (
                                         <List 
