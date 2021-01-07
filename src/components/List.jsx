@@ -10,19 +10,19 @@ const List = () => {
 
     let key = '';
     let appointment = [];
-    
+
     for (let i=0; i<=localStorage.length-1; i++) {
         key = localStorage.key(i);
         if(key[0] === 'a'){
             appointment.push(JSON.parse(localStorage.getItem(key)))
         }
     }
-        
+
     return (
         (appointment.length === 0)?
         <div className="container_error">
             <div className="__text">
-                <i className="fas fa-exclamation"></i>
+                <i class="fas fa-exclamation-triangle"></i>
             </div>
             <br/>
             <div className="__text">
@@ -32,7 +32,7 @@ const List = () => {
         : <div>
             {
                 Object.keys(appointment).map(key => (
-                    <Item 
+                    <Item
                         key={key}
                         appointment={appointment[key]}
                     />
