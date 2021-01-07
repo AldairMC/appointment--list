@@ -6,7 +6,7 @@ const Error = () => {
     return (
         <div className="container_error">
             <div className="__text">
-                <i className="fas fa-exclamation"></i>
+                <i class="fas fa-exclamation-triangle"></i>
             </div>
             <br/>
             <div className="__text">
