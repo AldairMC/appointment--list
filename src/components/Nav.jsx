@@ -15,18 +15,18 @@ const Nav = () => {
             <div className="item">
                 <Link to={'/all'}>
                     <i className="fas fa-list item-text">
-                        <span className="text-name">LISTADO</span>
+                        <span className="text-name">LIST</span>
                     </i>
                 </Link>
             </div>
             <div className="item">
                 <Link to={'/new'}>
                     <i className="fas fa-plus-circle item-text">
-                        <span className="text-name">CREAR</span>
+                        <span className="text-name">CREATE</span>
                     </i>
                 </Link>
             </div>
-        </nav>    
+        </nav>
     );
 }
 
