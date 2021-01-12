@@ -15,7 +15,7 @@ $color-home: #000000;
 .item {
     text-align: start;
     padding: 20px 15px 20px 60px;
-    
+
     .item-text {
         font-size: 20px;
         color: $color-home;
@@ -23,11 +23,10 @@ $color-home: #000000;
 
     .text-name {
         margin-left: 15px;
-        font-family: "Ubuntu";
+        font-family: cursive;
     }
 
     &:hover {
         background-color: $color-hover;
     }
 }
-
