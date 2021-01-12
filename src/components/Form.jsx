@@ -23,8 +23,8 @@ const Form = ({ handleData }) => {
 
     return (
         <form className="form-container" onSubmit={handleSubmit(onSubmit)}>
-            <h4>It is necessary to fill in all the fields to schedule an appointment</h4>
-            <p className="error">( * ) Fields required</p>
+            <h4>It is necessary to fill in all the fields to schedule an appointment.</h4>
+            <p className="error">( * ) Fields required.</p>
 
 
             <input className="form-input" name="code" ref={register({ required: true, min: 1 })} placeholder="* Number identify" type="number"/>
