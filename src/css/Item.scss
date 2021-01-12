@@ -1,16 +1,65 @@
 $color: #838682;
+$media-phone: 1080px;
+$separation: #929292;
 
 .container-item {
     margin-top: 40px;
-    margin-right: 25%;
+    margin-right: 10%;
     margin-left: 10%;
     margin-bottom: 50px;
+
 }
 
 .__items {
+    display: grid;
     border-radius: 15px;
-    border-left: 3px solid $color;
-    display: inline-block;
-    font-size: 13px;
-    padding: 5px 0 5px 25px;   
+    // border-left: 3px solid $color;
+    // display: inline-block;
+    font-size: 15px;
+    font-family: cursive;
+    padding: 35px;
+    box-shadow:
+       inset 0 -3em 3em rgba(255,255,255,0.3),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.5);
+}
+
+.__times {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 20px;
+}
+
+.__time {
+  grid-template-columns: 100%;
+  justify-self: center;
+}
+
+.__info_principal {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 10px;
+
+  @media (max-width: $media-phone){
+    grid-template-columns: 100%;
+    font-size: 14px;
+  }
+}
+
+.__info_p {
+  align-self: center;
+}
+
+.__logo {
+  justify-self: center;
+
+  @media (max-width: $media-phone){
+    margin-bottom: 10px;
+  }
+}
+
+.__desc {
+  border-top: 1px dashed $separation;
+  padding-top: 20px;
+  text-align: justify;
 }
