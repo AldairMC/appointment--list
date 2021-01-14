@@ -39,8 +39,8 @@ const Form = ({ handleData }) => {
             <input className="form-input" name="email" ref={register({ required: true })} placeholder="* Email" type="email"/>
             {errors.email && <span className="error">* Email is required</span>}
 
-            <input className="form-input" name="direction" ref={register({ required: true })} placeholder="* Direction" />
-            {errors.direction && <span className="error">* Direction is required</span>}
+            <input className="form-input" name="address" ref={register({ required: true })} placeholder="* Address" />
+            {errors.address && <span className="error">* Address is required</span>}
 
             <input className="form-input" name="hour" ref={register({ required: true })} type="datetime-local"/>
             {errors.hour && <span className="error">* Hour is required</span>}

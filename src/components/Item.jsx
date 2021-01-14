@@ -10,7 +10,7 @@ const Item = ({ appointment }) => {
 
     const doctor_aleatory = () => doctors[(Math.random() * 2).toFixed(0)]
 
-    let { name, lastName, code, description, direction, email, hour } = appointment
+    let { name, lastName, code, description, address, email, hour } = appointment
     return (
         <div className="container-item">
             <div className="__items">
@@ -26,7 +26,7 @@ const Item = ({ appointment }) => {
                         <span><strong><i class="fas fa-id-card"></i></strong> {code}</span>
                     </div>
                     <div>
-                        <span><strong><i class="fas fa-map-signs"></i></strong> {direction}</span>
+                        <span><strong><i class="fas fa-map-signs"></i></strong> {address}</span>
                     </div>
                     <div>
                         <span><strong><i class="fas fa-at"></i></strong> {email}</span>
