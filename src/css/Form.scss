@@ -7,7 +7,6 @@ $color-btn: #7CF364;
     padding-top: 50px;
     padding-left: 20%;
     padding-right: 20%;
-    font-family: Candara, cursive, helvetica;
 }
 
 .form-input {
@@ -17,14 +16,12 @@ $color-btn: #7CF364;
     border: none;
     background-color: $color-input;
     color: $color-text;
-    font-family: Candara, cursive, helvetica;
 }
 
 .form-submit {
     font-size: 15px;
     padding: 15px;
     border-radius: 25px;
-    font-family: Candara, cursive, helvetica;
     border: none;
     background-color: $color-btn;
     margin: 20px 0 50px 0;
