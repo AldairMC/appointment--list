@@ -15,7 +15,7 @@ const Form = ({ handleData }) => {
         Swal.fire({
           position: 'center',
           icon: 'success',
-          title: 'Successfully created appointment',
+          title: 'Appointment created successfully',
           showConfirmButton: false,
           timer: 1500
         })
