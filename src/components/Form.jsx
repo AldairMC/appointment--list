@@ -45,7 +45,7 @@ const Form = ({ handleData }) => {
             <input className="form-input" name="hour" ref={register({ required: true })} type="datetime-local"/>
             {errors.hour && <span className="error">* Hour is required</span>}
 
-            <textarea className="form-input" name="description" ref={register({ required: true })} placeholder="* Descripcion">
+            <textarea className="form-input" name="description" ref={register({ required: true })} placeholder="* Description">
             </textarea>
             {errors.description && <span className="error">* Description is required</span>}
 
